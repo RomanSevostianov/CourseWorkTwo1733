@@ -8,6 +8,6 @@ public class OneTimeTask extends Task implements Repeatable{
 
     @Override
     public boolean checkIfSuitable(LocalDate date) {
-        return true;
+        return false;
     }
 }

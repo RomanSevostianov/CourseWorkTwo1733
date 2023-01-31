@@ -7,7 +7,7 @@ public class WeeklyTask extends Task implements Repeatable{
     }
 
     public boolean checkIfSuitable (LocalDate date){
-        return date.getDayOfWeek()==getDateTime().getDayOfWeek();
+        return date.equals(getDateTime().getDayOfWeek());
     }
 
 }

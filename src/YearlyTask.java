@@ -8,6 +8,6 @@ public class YearlyTask extends Task implements Repeatable{
 
     @Override
     public boolean checkIfSuitable(LocalDate date) {
-        return date.getDayOfYear()==getDateTime().getDayOfYear();
+        return date.equals(getDateTime().getDayOfYear());
     }
 }
